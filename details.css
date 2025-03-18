@@ -1,0 +1,133 @@
+/* General Styling for Details Page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e; /* Same dark theme */
+    color: #e4e4e5;
+    line-height: 1.6;
+    text-align: center; /* Centers text globally */
+    padding: 1rem;
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Arranges items vertically */
+    align-items: center; /* Centers items horizontally */
+}
+
+/* Header Styling */
+header {
+    width: 100%; /* Full width to span across the page */
+    background: linear-gradient(45deg, #e50914, #a6040c);
+    color: #fff;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center aligns header content */
+}
+
+header h1 {
+    font-size: 2.2rem; /* Slightly smaller to fit page */
+    margin: 0;
+}
+
+/* Navigation Styling */
+nav {
+    margin-top: 1rem;
+}
+
+nav .modern-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #f05454, #d7263d);
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav .modern-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #d7263d, #f05454);
+}
+
+/* Main Section Styling */
+
+/* Movie Poster Styling */
+.movie-poster {
+    max-width: 90%; /* Makes it responsive on smaller screens */
+    height: auto; /* Maintains aspect ratio */
+    margin: 1rem auto; /* Centers the poster with balanced spacing */
+    border-radius: 10px; /* Rounded edges for a modern look */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Stylish shadow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05); /* Subtle zoom-in effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+main {
+    max-width: 800px;
+    width: 100%; /* Ensures it adapts to smaller screens */
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #2c2c2e; /* Slightly lighter background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+main h2 {
+    color: #e50914; /* Match the vibrant color theme */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #d1d1d3; /* Softer text color for better contrast */
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align list items to the left */
+    display: inline-block; /* Ensures lists are centered as a block */
+}
+
+main ul li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #e4e4e5;
+}
+
+main ul li::before {
+    content: "•"; /* Adds a bullet before each list item */
+    color: #e50914;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%; /* Full width for footer */
+    background: #222;
+    color: #ccc;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #444; /* Subtle border at the top */
+}
+
+footer p {
+    margin: 0;
+}
